@@ -39,9 +39,9 @@ export default class index extends Component {
 
   componentDidMount() {
     Tts.getInitStatus().then(() => {
-      Tts.setDefaultLanguage('tr-TR'); // Türkçe dili ayarla
-      Tts.setDefaultRate(0.5); // Konuşma hızını düşür
-      Tts.setDefaultPitch(0.8); // Ses tonunu biraz yükselt
+      Tts.setDefaultLanguage('tr-TR');
+      Tts.setDefaultRate(0.5); 
+      Tts.setDefaultPitch(0.8); 
     });
   }
 
@@ -115,22 +115,21 @@ const styles = StyleSheet.create({
     marginTop:20
   },
   buttons1: {
-    width: width * 0.36, // Ekran genişliğinin %40'ı
-    height: width * 0.36, // Ekran genişliğinin %40'ı
+    width: width * 0.36,
+    height: width * 0.36, 
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: width * 0.2, // Yarıçapı genişliğin yarısı yap
+    borderRadius: width * 0.2, 
     marginTop: width * 0.03,
     backgroundColor:'#028482'
     
   },
   
   buttons2: {
-    width: width * 0.15, // Ekran genişliğinin %15'i
-    height: width * 0.15, // Ekran genişliğinin %15'i
+    width: width * 0.15,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: width * 0.075, // Yarıçapı genişliğin yarısı yap
+    borderRadius: width * 0.075, 
     backgroundColor:'#028482'
     
   },
